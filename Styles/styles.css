@@ -1,13 +1,16 @@
 .header{
     display:flex;
-    width: 1440px;
+    width:100%;
     height: 114px;
-    left:0px;
-    top:0px;
-    margin-top:-20px;
-    margin-left:-10px;
     background-color: #459663;
+   
 }
+
+body
+    {
+    width:100%;
+    margin:0;
+    }
 
 .main-text{
     font-family:'Playfair Display';
@@ -15,6 +18,7 @@
     font-size:48px;
     color:#FFFFFF;
     margin:20px;
+    text-decoration: none;
 }
 
 h2{
@@ -66,9 +70,22 @@ button{
     border-radius:30px;
     border:none 1px;
     margin-top:50px;
+    
+    
 }
 
+button a:link{
+    text-decoration: none;
+    color:#FFFFFF;
+}
 
+button a:visited{
+    color:#FFFFFF;
+}
+
+button a:active{
+    color:#FEC952;
+}
 
 .list{
     color:white;
@@ -77,7 +94,7 @@ button{
     text-decoration: none;
 }
 
-a:link{
+.list a:link{
     font-family:'Poppins';
     font-weight: bold;
     font-size:24px;
@@ -85,10 +102,21 @@ a:link{
     text-decoration: none;   
 }
 
+.list a:visited{
+    color:#FFFFFF;
+}
+
+.list a:active{
+    color:#FEC952;
+}
+
+
+
 .paragraph-text{
     font-family:'Poppins';
     font-size:16px;
     color:#000000;
+    flex-wrap:wrap;
    
 }
 li{
@@ -119,7 +147,7 @@ h1{
 .pattern{
     display:flex;
     flex-direction:row;
-    width:1558px;
+    width:100%;
     height:650px;
     background-image:url("./images/pattern.png");
     background-size:cover;
@@ -128,7 +156,7 @@ h1{
 
 .white-box{
     flex-direction:column;
-    width: 500px;
+    width: 50%;
     height: 500px;
     background-color: #FFFFFF;
     background-size:cover;
@@ -137,8 +165,8 @@ h1{
 
 .fruit{
     flex-direction:column;
-    width: 538px;
-    height: 500px;
+    width: 50%;
+    height: 100%;
     background-image:url("./images/fruit.png");
     background-size:cover;
 }
@@ -146,7 +174,7 @@ h1{
 .bottom-rectangle{
     display:flex;
     flex-direction:row;
-    width:1558px;
+    width:100%;
     height:600px;
     background-color:#FFFFFF;
     background-size:cover;
@@ -161,14 +189,14 @@ h1{
     background-color:#FFFFFF;
     border: 5px solid #FEC952;
     border-radius: 20px;
-    flex-direction:column;
+    
     justify-content: space-evenly;
 }
 
 .big-rectangle{
     display:flex;
     flex-direction:row;
-    width: 1200px;
+    width: 100%;
     height: 500px;
     background-color: #FFFFFF;
     margin:auto;
@@ -346,3 +374,225 @@ ul{
     width:600px;
 }
 
+
+
+@media screen and (min-width:481px),(max-width:768px){
+    .pattern{
+        display:flex;
+        flex-direction:row;  
+      }
+      
+      .white-box{
+          flex-direction:column;
+      }
+      
+      .fruit{
+          flex-direction:column;
+      }
+      }
+
+@media screen and (max-width:480px){
+
+        .main-text{
+            font-size:24px;
+        }
+
+        .list a:link{
+            font-size:12px;
+        }
+
+        .list{
+            flex-direction:column;
+        }
+        li{
+            margin:5px;
+        }
+        .header{
+            display:flex;
+            height: auto;
+            width:auto;
+        }
+        
+        ul.li{
+            flex-wrap:wrap;
+            flex-direction:row;
+        }
+        
+        .pattern{
+          display:flex;
+          flex-direction:column;  
+          height:700px;
+          width:auto;
+        }
+        
+        .white-box{
+            flex-direction:row;
+            align-self:center;
+        }
+        
+        .fruit{
+            flex-direction:row;
+            width:70%;
+            align-self:center;
+        }
+
+        h1{
+            font-size:32px;
+        }
+
+        .reg-text{
+            font-size:20px;
+        }
+
+        button{
+            font-size:15px;
+            margin-top:10px;
+            width:180px;
+        }
+
+        .blue-text{
+            font-size:25px;
+        }
+
+        .bottom-rectangle{
+            display:flex;
+            flex-direction:column;
+            height:500px;
+            width:50%;
+            align-items:center;
+            justify-content: space-evenly;
+            
+        }
+        .yellow-box{
+           flex-direction:row;
+           width:auto;
+           height:auto;
+          
+           align-items:center;
+           margin:10px;
+        }
+        .number{
+            font-size:50px;
+        }
+
+        .fancy-text{
+            font-size:20px;
+            flex-wrap:wrap;
+        }
+
+        .about-container{
+            display:flex;
+            flex-direction:column;
+        }
+        .stat-1{
+            flex-direction:row;
+            width:184px;
+            height:150px;;
+        }
+        
+        .stat-2{
+            flex-direction:row;
+            width:184px;
+            height:150px;
+        }
+
+        .stat-3{
+            flex-direction:row;
+            width:184px;
+            height:150px;
+        }
+        
+        .phone-alert{
+            flex-direction:row;
+            width:400px;
+            height:373px;
+            margin:0px;
+        }
+
+        .alert-signup{
+            flex-direction:row;
+            width:300px;
+        }
+        
+        .avocado{
+            flex-direction:row;
+            width:175px;
+            height:196px;
+            margin:0px;
+            align-self:center;
+        }
+
+        .get-started-form{
+            flex-direction:row;
+            width:auto;
+            flex-wrap:wrap;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"]
+        {
+            font-family:'Poppins';
+            background-color:#FFFFFF;
+            border:1px solid #8692A6;
+            width:auto;
+            padding:10px;
+            margin:10px;
+            border-radius:6px;
+            font-size:10px;
+            
+        }
+        .form-text{
+            font-size:10px;
+        }
+        h2{
+            font-size:18px;
+        }
+
+        .big-rectangle{
+            display:flex;
+            flex-direction:column;
+            width:50%;
+        }
+        .login-photo{
+            flex-direction:row;
+            width:210px;
+            height:250px;
+            margin:0px;
+        }
+
+        #form{
+            flex-direction: row;
+            width:auto;
+        }
+
+        .fridge{
+            flex-direction:row;
+            width:245px;
+            height:316px;
+            margin:auto;
+        }
+
+        .side-box{
+            flex-direction:row;
+            margin:auto;
+            width:350px;
+            flex-wrap:wrap;
+        }
+
+        .fridge-boxes{
+            flex-direction:row;
+            width:auto;
+            height:auto;
+        }
+
+        .fridge-list li{
+            flex-direction: row;
+            width:100px;
+            height:74px;
+            border-radius:5px;
+            flex-wrap:wrap;
+        }
+        }
+        
+        
