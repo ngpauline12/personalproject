@@ -1,0 +1,33 @@
+{
+  "name": "personalproject",
+  "version": "1.0.0",
+  "description": "happy fridge",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngpauline12/personalproject.git"
+  },
+  "author": "Pauline Ng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngpauline12/personalproject/issues"
+  },
+  "homepage": "https://github.com/ngpauline12/personalproject#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
+  }
+}
